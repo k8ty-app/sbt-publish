@@ -1,5 +1,5 @@
 sbtPlugin := true
 
-name := "gitlab"
-organization := "com.sludg.sbt"
-version := "0.5"
+name := "gitlab-plugin"
+organization := "app.k8ty.sbt"
+version := "0.0.6"

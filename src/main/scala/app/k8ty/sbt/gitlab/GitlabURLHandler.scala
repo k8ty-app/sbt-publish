@@ -1,4 +1,4 @@
-package com.sludg.sbt.gitlab
+package app.k8ty.sbt.gitlab
 
 import gigahorse.support.okhttp.Gigahorse
 import okhttp3.{MediaType, OkHttpClient, Request, RequestBody}
