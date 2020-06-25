@@ -50,12 +50,12 @@ object K8tyGitlabPlugin extends AutoPlugin with K8tyGitlabKeys {
       log.info(s"Publishing to ${publishTo.value}")
     },
 
-    gitlabTokenPublish := Def.sequential(
+    k8tyGitlabTokenPublish := Def.sequential(
       configureTokenDispatcher,
       publish
     ).value,
 
-    gitlabCIPublish := Def.sequential(
+    k8tyGitlabCIPublish := Def.sequential(
       configureCIDispatcher,
       publish
     ).value
