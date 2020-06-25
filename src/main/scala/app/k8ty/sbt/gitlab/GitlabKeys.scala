@@ -1,4 +1,4 @@
-package com.sludg.sbt.gitlab
+package app.k8ty.sbt.gitlab
 
 import sbt._
 

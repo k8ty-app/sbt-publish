@@ -1,4 +1,4 @@
-package com.sludg.sbt.gitlab
+package app.k8ty.sbt.gitlab
 
 import sbt.Keys._
 import sbt.{Def, _}
