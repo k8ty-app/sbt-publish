@@ -2,7 +2,7 @@ package app.k8ty.sbt.gitlab
 
 import sbt._
 
-trait GitlabKeys {
+trait K8tyGitlabKeys {
 
   lazy val gitlabProjectId = settingKey[String]("GitLab Project ID")
 

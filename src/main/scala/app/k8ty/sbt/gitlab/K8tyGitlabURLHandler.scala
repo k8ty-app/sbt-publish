@@ -7,7 +7,7 @@ import org.apache.ivy.util.url.IvyAuthenticator
 import sbt.{File, URL}
 import sbt.internal.librarymanagement.ivyint.{ErrorMessageAuthenticator, GigahorseUrlHandler}
 
-object GitlabURLHandlerHelper {
+object K8tyGitlabURLHandlerHelper {
   lazy val http: OkHttpClient = {
     Gigahorse.http(Gigahorse.config)
       .underlying[OkHttpClient]
@@ -20,7 +20,7 @@ object GitlabURLHandlerHelper {
 }
 
 
-abstract class GitlabURLHandler extends GigahorseUrlHandler(GitlabURLHandlerHelper.http) {
+abstract class K8tyGitlabURLHandler extends GigahorseUrlHandler(K8tyGitlabURLHandlerHelper.http) {
 
   val headerName: String
   val headerVal: String
@@ -49,7 +49,7 @@ abstract class GitlabURLHandler extends GigahorseUrlHandler(GitlabURLHandlerHelp
     if (l != null) {
       l.start(new CopyProgressEvent())
     }
-    val response = GitlabURLHandlerHelper.http.newCall(request).execute()
+    val response = K8tyGitlabURLHandlerHelper.http.newCall(request).execute()
     try {
       if (l != null) {
         l.end(new CopyProgressEvent(EmptyBuffer, source.length()))
