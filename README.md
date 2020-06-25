@@ -9,7 +9,10 @@ This is my first SBT plugin, and far from perfect :-)
 
 ## Installation
 
-Clone the repository and `sbt publishLocal`
+This project has been deployed to Maven Central, so by simply adding `addSbtPlugin("app.k8ty" % "gitlab-plugin" % "0.0.8")`
+to `project/plugins.sbt`, it should resolve.
+
+If you need to make some changes, clone the repository and `sbt publishLocal` after you do your thing.
 
 ## Usage
 
